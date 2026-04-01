@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5efe6;
+  --foreground: #1c1a19;
+  --surface: #eadfce;
+  --card: rgba(255, 249, 241, 0.68);
+  --border: rgba(28, 26, 25, 0.15);
+  --muted: #5f5a55;
+  --accent: #b7410e;
+  --accent-2: #2d7b7a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-surface: var(--surface);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --font-sans: var(--font-space-grotesk);
+  --font-mono: var(--font-space-grotesk);
+  --font-serif: var(--font-cormorant);
 }
 
 body {
-  background: var(--background);
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 14% 18%, rgba(45, 123, 122, 0.22), transparent 42%),
+    radial-gradient(circle at 84% 16%, rgba(183, 65, 14, 0.18), transparent 38%),
+    linear-gradient(160deg, #f6f0e8 0%, #f2e8db 46%, #efe2d2 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-space-grotesk), "Segoe UI", sans-serif;
+}
+
+.orb {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  border-radius: 9999px;
+  filter: blur(2px);
+}
+
+.orb-a {
+  top: 80px;
+  right: -120px;
+  width: 340px;
+  height: 340px;
+  background: radial-gradient(circle at 30% 35%, #2d7b7a, transparent 72%);
+  opacity: 0.3;
+}
+
+.orb-b {
+  left: -120px;
+  top: 520px;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle at 70% 60%, #b7410e, transparent 68%);
+  opacity: 0.23;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: reveal-up 700ms ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 120ms;
+}
+
+.delay-2 {
+  animation-delay: 220ms;
+}
+
+.delay-3 {
+  animation-delay: 320ms;
+}
+
+.delay-4 {
+  animation-delay: 420ms;
+}
+
+.btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent) 0%, #c95a2c 100%);
+  box-shadow: 0 10px 30px rgba(183, 65, 14, 0.22);
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 34px rgba(183, 65, 14, 0.28);
+}
+
+@keyframes reveal-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .orb-a,
+  .orb-b {
+    width: 220px;
+    height: 220px;
+  }
 }
