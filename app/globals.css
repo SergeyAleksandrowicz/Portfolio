@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5efe6;
-  --foreground: #1c1a19;
-  --surface: #eadfce;
-  --card: rgba(255, 249, 241, 0.68);
-  --border: rgba(28, 26, 25, 0.15);
-  --muted: #5f5a55;
-  --accent: #b7410e;
-  --accent-2: #2d7b7a;
+  --background: #030712;
+  --foreground: #dce9ff;
+  --surface: #071126;
+  --card: rgba(8, 20, 47, 0.82);
+  --border: rgba(121, 165, 255, 0.26);
+  --muted: #8faad9;
+  --accent: #3f8cff;
+  --accent-2: #4bd2ff;
 }
 
 @theme inline {
@@ -29,11 +29,35 @@ body {
   position: relative;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 14% 18%, rgba(45, 123, 122, 0.22), transparent 42%),
-    radial-gradient(circle at 84% 16%, rgba(183, 65, 14, 0.18), transparent 38%),
-    linear-gradient(160deg, #f6f0e8 0%, #f2e8db 46%, #efe2d2 100%);
+    radial-gradient(circle at 12% 14%, rgba(63, 140, 255, 0.26), transparent 38%),
+    radial-gradient(circle at 84% 12%, rgba(75, 210, 255, 0.14), transparent 34%),
+    radial-gradient(circle at 55% 118%, rgba(23, 56, 133, 0.38), transparent 56%),
+    linear-gradient(170deg, #01040c 0%, #020915 48%, #01050f 100%);
   color: var(--foreground);
   font-family: var(--font-space-grotesk), "Segoe UI", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(2px 2px at 14% 24%, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 22% 78%, rgba(209, 223, 255, 0.5), transparent),
+    radial-gradient(2px 2px at 62% 18%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 71% 67%, rgba(198, 216, 255, 0.48), transparent),
+    radial-gradient(2px 2px at 88% 34%, rgba(231, 238, 255, 0.52), transparent),
+    radial-gradient(1px 1px at 45% 45%, rgba(214, 226, 255, 0.45), transparent);
+  opacity: 0.5;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 52%, rgba(0, 0, 0, 0.38) 100%);
 }
 
 .orb {
@@ -49,7 +73,7 @@ body {
   right: -120px;
   width: 340px;
   height: 340px;
-  background: radial-gradient(circle at 30% 35%, #2d7b7a, transparent 72%);
+  background: radial-gradient(circle at 30% 35%, #3f8cff, transparent 72%);
   opacity: 0.3;
 }
 
@@ -58,8 +82,8 @@ body {
   top: 520px;
   width: 320px;
   height: 320px;
-  background: radial-gradient(circle at 70% 60%, #b7410e, transparent 68%);
-  opacity: 0.23;
+  background: radial-gradient(circle at 70% 60%, #4bd2ff, transparent 68%);
+  opacity: 0.22;
 }
 
 .reveal {
@@ -86,14 +110,14 @@ body {
 
 .btn-primary {
   color: #fff;
-  background: linear-gradient(135deg, var(--accent) 0%, #c95a2c 100%);
-  box-shadow: 0 10px 30px rgba(183, 65, 14, 0.22);
+  background: linear-gradient(135deg, var(--accent) 0%, #5fb6ff 100%);
+  box-shadow: 0 10px 30px rgba(63, 140, 255, 0.36);
   transition: transform 240ms ease, box-shadow 240ms ease;
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 16px 34px rgba(183, 65, 14, 0.28);
+  box-shadow: 0 16px 34px rgba(63, 140, 255, 0.45);
 }
 
 @keyframes reveal-up {
