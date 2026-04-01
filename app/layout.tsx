@@ -16,7 +16,7 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: "Aleksander | Portfolio",
   description:
-    "Portfolio website showcasing full-stack development projects and skills.",
+    "Full-stack portfolio focused on the Booker stack: Next.js, React, Node.js, Express, PostgreSQL, Sequelize, Redis, and AI-supported development.",
 };
 
 export default function RootLayout({

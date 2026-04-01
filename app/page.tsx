@@ -1,32 +1,33 @@
 export default function Home() {
   const projects = [
     {
-      title: "Booker Platform",
+      title: "Booker: End-to-End Booking Platform",
       summary:
-        "Booking flow with auth, rate limiting, and integrity-safe reservation rules.",
-      stack: "Next.js, Node.js, PostgreSQL",
+        "Built full booking flows with token-based auth, secure route guards, validation, and race-condition-safe reservations.",
+      stack:
+        "Next.js 16, React 19, Node.js, Express 5, PostgreSQL, Sequelize",
     },
     {
-      title: "Realtime Dashboard",
+      title: "Secure Backend Infrastructure",
       summary:
-        "A live KPI panel with event streaming, anomaly flags, and role-based insights.",
-      stack: "React, WebSockets, Express",
+        "Implemented refresh token rotation, Redis-ready rate limiting, Helmet/CORS hardening, and robust migration-driven schema updates.",
+      stack: "JWT, bcrypt, Redis, express-rate-limit, Helmet, express-validator",
     },
     {
-      title: "Design Systems Lab",
+      title: "AI-Supported Delivery Workflow",
       summary:
-        "Component primitives and token architecture for scalable product teams.",
-      stack: "TypeScript, Storybook, CSS",
+        "Used AI pair-programming support for architecture iteration, faster test coverage, and cleaner implementation of complex edge-case handling.",
+      stack: "AI-assisted coding, testing, refactoring, and documentation",
     },
   ];
 
   const skills = [
-    "Product-minded frontend engineering",
-    "Accessible interaction design",
-    "API architecture and integration",
-    "Performance optimization",
-    "Testing and release quality",
-    "Design system implementation",
+    "Next.js App Router and modern React",
+    "Node.js + Express API design",
+    "PostgreSQL data modeling with Sequelize",
+    "JWT auth and refresh-token security",
+    "Rate limiting, validation, and API hardening",
+    "AI-assisted software delivery workflow",
   ];
 
   return (
@@ -57,13 +58,13 @@ export default function Home() {
             Aleksander | Full-Stack Developer
           </p>
           <h1 className="text-balance font-serif text-5xl leading-[1.02] sm:text-6xl lg:text-7xl">
-            Building focused digital products with strong engineering and clear
-            visual identity.
+            I build production-ready booking systems with a modern JS stack and
+            AI-supported engineering workflow.
           </h1>
           <p className="mt-6 max-w-2xl text-pretty text-lg leading-8 text-[var(--muted)]">
-            I design and ship web experiences that balance speed, reliability,
-            and personality. From system design to pixel polish, I care about
-            details that users can feel.
+            My core stack comes directly from Booker: Next.js 16 + React 19 on
+            the frontend, Node.js/Express APIs, PostgreSQL with Sequelize,
+            Redis-enabled rate limiting, and secure token-based auth.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <a
@@ -85,10 +86,10 @@ export default function Home() {
             Current Focus
           </p>
           <h2 className="mt-4 text-3xl font-semibold leading-tight">
-            Clean architecture, smooth UX, measurable outcomes.
+            Scalable backend logic, resilient auth, and clean frontend UX.
           </h2>
           <p className="mt-4 text-[var(--muted)]">
-            Open to product engineering roles and freelance collaborations.
+            Open to full-stack roles where shipping quality software fast matters.
           </p>
         </aside>
       </section>
@@ -131,18 +132,18 @@ export default function Home() {
       >
         <h2 className="text-3xl font-semibold sm:text-4xl">Contact</h2>
         <p className="mt-4 max-w-xl text-[var(--muted)]">
-          If you want to build something thoughtful and high-impact, I would
-          love to hear about it.
+          Want to build secure, scalable products with a practical AI-assisted
+          workflow? Let&apos;s connect.
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
           <a
-            href="mailto:hello@example.com"
+            href="mailto:sergeyaleksandrowicz@gmail.com"
             className="btn-primary rounded-full px-7 py-3 text-sm font-semibold uppercase tracking-[0.14em]"
           >
-            hello@example.com
+            sergeyaleksandrowicz@gmail.com
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/SergeyAleksandrowicz"
             className="rounded-full border border-[var(--border)] px-7 py-3 text-sm font-semibold uppercase tracking-[0.14em] transition-colors hover:bg-[var(--surface)]"
             target="_blank"
             rel="noreferrer"
