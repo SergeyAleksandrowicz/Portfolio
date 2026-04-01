@@ -55,7 +55,7 @@ export default function Home() {
       <section className="reveal delay-1 mt-20 grid items-end gap-10 lg:grid-cols-[1.15fr_0.85fr]">
         <div>
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-[var(--accent-2)]">
-            Aleksander | Full-Stack Developer
+            Full-Stack Developer
           </p>
           <h1 className="text-balance font-serif text-5xl leading-[1.02] sm:text-6xl lg:text-7xl">
             I build production-ready booking systems with a modern JS stack and
@@ -137,10 +137,10 @@ export default function Home() {
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
           <a
-            href="mailto:sergeyaleksandrowicz@gmail.com"
+            href="mailto:hello@example.com"
             className="btn-primary rounded-full px-7 py-3 text-sm font-semibold uppercase tracking-[0.14em]"
           >
-            sergeyaleksandrowicz@gmail.com
+            hello@example.com
           </a>
           <a
             href="https://github.com/SergeyAleksandrowicz"

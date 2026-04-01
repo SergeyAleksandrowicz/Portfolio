@@ -14,7 +14,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Aleksander | Portfolio",
+  title: "Developer Portfolio",
   description:
     "Full-stack portfolio focused on the Booker stack: Next.js, React, Node.js, Express, PostgreSQL, Sequelize, Redis, and AI-supported development.",
 };
